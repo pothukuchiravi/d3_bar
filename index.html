@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+	<style>
+
+	.axis {
+		font: 10px sans-serif;
+	}
+
+	.axis path,
+	.axis line {
+		fill:none;
+		stroke: #000;
+		shape-rendering: crispEdges;
+	}
+	</style>
+</head>
+
+<body>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+	var margin = {top:20, right: 20, bottom: 70, left: 40},
+		  width = 600 - margin.left - margin.right,
+		  height = 300 - margin.top - margin.bottom;
+
+	// Parse data/time
+	var parseDate = d3.time.format("%Y").parse;
+
+	var x = d3.scale.ordinal().rangeRoundBands([0, width], 0.05);
+
+	var y = d3.scale.linear().range([height,0]);
+
+	
+</script>
+</body>
